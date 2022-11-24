@@ -10,11 +10,11 @@ SIZE = 102400
 
 so.connect((host, port))
 
-yanit = so.recv(SIZE)
-ab = yanit.decode("utf-8")
+rec = so.recv(SIZE)
+ab = rec.decode("utf-8")
 print("first input : ", ab)
-yanit = so.recv(SIZE)
-fa = yanit.decode("utf-8")
+rec = so.recv(SIZE)
+fa = rec.decode("utf-8")
 
 print("receive filename: ", fa)
 try:
