@@ -12,7 +12,7 @@ so.connect((host, port))
 
 yanit = so.recv(SIZE)
 ab = yanit.decode("utf-8")
-print("ilk input : ", ab)
+print("first input : ", ab)
 yanit = so.recv(SIZE)
 fa = yanit.decode("utf-8")
 
